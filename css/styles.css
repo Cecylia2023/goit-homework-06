@@ -71,18 +71,13 @@ letter-spacing: 0.02em;
 color: #434455;
 }
 /*------------- /COMMON STYLES -----------------*/
-/*------------- HEDER MOBILE STYLES -----------------*/
+
+/*------------- MOBILE STYLES -----------------*/
 .page-header {
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid #E7E9FC;
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-}
-.menu {
-    display: none;
-}
-.contact-list {
-    display: none;
 }
 .logotype {
     font-family: "Raleway", sans-serif;
@@ -93,159 +88,379 @@ color: #434455;
     text-transform: uppercase;
     color: #4D5AE5;
     margin-right: 76px;
-    }
+}
     .accent {
         color: #2E2F42
     }
-   .mobile-open-btn {
-    border: none;
-    background-color: transparent;
-    padding: 0;
-    line-height: 0;
-   }
-   .mobile-open-btn-icon {
-    fill: #2F2F37;
-   }
-   .header-container {
-    display: flex;
-   align-items: center;
-   justify-content: space-between; 
-   }
-   /*------------- HEDER MOBILE MENU -----------------*/
-   .mobile-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999999999999999;
-    background-color: #FFF;
-   }
-   .mobile-close-btn {
-    background-color: #E7E9FC;
-    padding: 0;
-    line-height: 0;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: none;
-    position: absolute;
-    top: 24px;
-    right: 8px;    
-   }
-   .mobile-close-btn:active {
-    background-color: #404BBF;
-    stroke: #FFFFFF;
-   }
-   .mobile-close-btn-icon {
-    stroke: #2E2F42;
-   }
-   .mobile-menu-container {
-    position: relative;
-    padding-top: 72px;
-    padding-bottom: 40px;
-   }
-   .mobile-menu-list {
-    width: 151px;
-    margin-bottom: 168px;
-   }
-   .mobile-menu-item:not(:last-child) {
-    margin-bottom: 40px;
-   }
-   .mobile-menu-link  {
+    .header-container {
+        display: flex;
+       align-items: center;
+       justify-content: space-between; 
+    }
+       /*------------- HERO MOBILE STYLES -----------------*/
+.hero {
+    background-color: rgba(46, 47, 66, 0.70);
+    background-image: linear-gradient( rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office.jpg);
+    padding: 76px 0 72px 0;
+    max-width: 320px;
+    max-height: 432px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+}
+.main-title {
     font-size: 36px;
-font-weight: 700;
-line-height: 1.11;
-letter-spacing: 0.02em;
-color: #2E2F42;
-text-transform: capitalize;
-transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1) ; 
-}
-.mobile-menu-link:hover,
-.mobile-menu-link:focus {
-    color:#404bbf;;
-}
-.mobile-menu-link-first {
-    color: #404bbf;
-}
-.mobile-contact-list {
-    width: 193px;
-    margin-bottom: 48px;
-}
-.mobile-contact-list-item:not(:last-child) {
-    margin-bottom: 24px;
-}
-.contact-list-tel {
-font-size: 20px;
-font-weight: 500;
-line-height: 1.2;
-letter-spacing: 0.02em;
-color: #4D5AE5;
-}
-.contact-list-email {
-    color: #434455;
-font-size: 20px;
-font-weight: 500;
-line-height: 1.2;
-letter-spacing: 0.02em;
-}
-.contact-list-item {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 72px;
+    max-width: 288px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    }
+    .order-service-btn {
+        display: block;
+        background-color: #4D5AE5;
+        font-family: "Roboto", sans-serif;    
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        padding: 16px 32px;
+        min-width: 169px;
+        height: 56px;
+        border: none;
+        border-radius: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 72px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .order-service-btn:hover,
+    .order-service-btn:focus {
+        background-color: #404BBF;    
+    }
+/*-------------/ HERO MOBILE STYLES -----------------*/
 
-}
-.contact-list-item:hover,
-.contact-list-item:focus {
-    color: #404bbf;
-}
-.mobile-list-icon {
-    display: flex;
-    gap: 40px;
-    justify-content: space-between;
-    align-items: center;
-}
-.mobile-icon-item {
-    width: 40px;
-    height: 40px;
-}
-.mobile-icon-link {
-    display: flex;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    background-color: #4d5ae5;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.mobile-icon {
-    fill: #f4f4fd;
-}
-.mobile-icon-link:hover,
-.mobile-icon-link:focus {
-    background-color: #404bbf;
-}
 
-   
 
-/*-------------/ HEDER MOBILE MENU -----------------*/    
-   
-/*------------- /HEDER MOBILE STYLES -----------------*/
+
 @media screen and (min-width: 480px) {
     .container {
         width: 320px;
         margin-left: auto;
         margin-right: auto;
     }
+ 
 }
+
+
+@media screen and (max-width: 767px) {
+
+/*------------- HEDER MOBILE STYLES -----------------*/
+   
+    .menu {
+        display: none;
+    }
+    .contact-list {
+        display: none;
+    }
+    .header-container {
+        height: 56px;
+    }
+    
+       .mobile-open-btn {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        line-height: 0;
+       }
+       .mobile-open-btn-icon {
+        fill: #2F2F37;
+       }
+       
+
+/*------------- /HEDER MOBILE STYLES -----------------*/
+
+/*------------- HEDER MOBILE MENU STYLES -----------------*/ 
+
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999999999999999;
+        background-color: #FFF;
+        transform: translateX(100%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+       }
+       .mobile-menu.is-open {
+        transform: translateX(0%);
+       }
+       .mobile-close-btn {
+        background-color: #E7E9FC;
+        padding: 0;
+        line-height: 0;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        top: 24px;
+        right: 8px;    
+       }
+       .mobile-close-btn:active {
+        background-color: #404BBF;
+        stroke: #FFFFFF;
+       }
+       .mobile-close-btn-icon {
+        stroke: #2E2F42;
+       }
+       .mobile-menu-container {
+        position: relative;
+        padding-top: 72px;
+        padding-bottom: 40px;
+       }
+       .mobile-menu-list {
+        width: 151px;
+        margin-bottom: 168px;
+       }
+       .mobile-menu-item:not(:last-child) {
+        margin-bottom: 40px;
+       }
+       .mobile-menu-link  {
+        font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    text-transform: capitalize;
+    transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    }
+    .mobile-menu-link:hover,
+    .mobile-menu-link:focus {
+        color:#404bbf;;
+    }
+    .mobile-menu-link-first {
+        color: #404bbf;
+    }
+    .mobile-contact-list {
+        width: 193px;
+        margin-bottom: 48px;
+    }
+    .mobile-contact-list-item:not(:last-child) {
+        margin-bottom: 24px;
+    }
+    .contact-list-tel {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #4D5AE5;
+    }
+    .contact-list-email {
+        color: #434455;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    }
+    .contact-list-item {
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    }
+    .contact-list-item:hover,
+    .contact-list-item:focus {
+        color: #404bbf;
+    }
+    .mobile-list-icon {
+        display: flex;
+        gap: 40px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mobile-icon-item {
+        width: 40px;
+        height: 40px;
+    }
+    .mobile-icon-link {
+        display: flex;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        background-color: #4d5ae5;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .mobile-icon {
+        fill: #f4f4fd;
+    }
+    .mobile-icon-link:hover,
+    .mobile-icon-link:focus {
+        background-color: #404bbf;
+    }  
+       
+/*-------------/ HEDER MOBILE MENU STYLES -----------------*/
+/*------------- HERO MOBILE STYLES -----------------*/
+    .main-title {
+        padding-left: 59px;
+        padding-right: 60px;  
+
+    }
+/*------------ / HERO MOBILE STYLES -----------------*/
+}   
+
+
+
+
+
+/*-------------/ TABLET STYLES -----------------*/
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;
     }
+/*------------- HEDER TABLET STYLES-----------------*/
+
+    .mobile-menu {
+        display: none;
+    }
+    .mobile-open-btn {
+        display: none;
+    }
+    .page-header {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        height: 72px;
+    }
     
-}
+    .menu {
+        display: flex;
+        gap: 40px;
+    }
+    .contact-list {
+        display: block;
+    }
+    
+    .page-navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 76px;
+    }
+    .contact-list-item:not(:last-child) {
+        margin-bottom: 12px;
+    }
+    .menu-link {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+        padding: 24px 0;
+        transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1) ; 
+        
+        }
+        .menu-link:hover,
+        .menu-link:focus {
+            color: #404BBF;
+        }
+        .menu-link-first {
+            position: relative;
+            color: #404bbf;
+        }
+        .menu-link-first::after {
+            content: "";
+            position: absolute;
+            width: 48px;
+            height: 4px;
+            border-radius: 2px;
+            background-color:  #404BBF;
+            left: 0;
+            bottom: -1px;
+        }
+        .contact {
+            font-style: normal;
+        }
+        .contact-list-link {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.16;
+            letter-spacing: 0.04em;
+            color: #434455;
+            transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+        }
+        .contact-list-link:hover,
+        .contact-list-link:focus {
+            color: #404BBF;
+        }
+/*------------- /HEDER TABLET STYLES-----------------*/
+
+/*------------- HERO TABLET STYLES-----------------*/
+        .hero {  
+            padding: 112px 0;
+            max-width: 768px;
+            max-height: 436px;
+        }
+        .main-title {
+            font-size: 56px;
+            line-height: 1.07;
+            margin-bottom: 36px;
+            max-width: 496px;
+            max-height: 120px;            
+        }
+        .order-service-btn {
+            margin-bottom: 112px;
+        }
+        
+/*------------- /HERO TABLET STYLES-----------------*/        
+} 
+
+/*------------- /TABLET STYLES -----------------*/    
+  
+   
+/*------------- DESKTOP STYLES -----------------*/      
+
 @media screen and (min-width: 1158px) {
     .container {
         width: 1158px;
     }
-   
+/*------------- HEDER DESKTOP STYLES -----------------*/
+    .page-header {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .contact-list-link {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+    .contact-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 40px;    
+    } 
+
+/*------------- /HEDER DESKTOP STYLES -----------------*/
+
+/*------------- HERO DESKTOP STYLES -----------------*/
+    .hero {
+        padding: 188px 0;
+        max-width: 1440px;
+        max-height: 600px;
+    }
+    .main-title {
+        margin-bottom: 48px;
+    }
+    .order-service-btn {
+        margin-bottom: 188px;
+    }
+/*------------- /HERO DESKTOP STYLES -----------------*/    
 }
