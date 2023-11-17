@@ -47,29 +47,30 @@ address {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-.section-title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
+  .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color:#2E2F42;
+    text-align: center;
+  }
+  .list-title {   
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color:#2E2F42;
-  text-align: center;
-}
-.list-title {   
-font-size: 20px;
-font-weight: 500;
-line-height: 1.2;
-letter-spacing: 0.02em;
-color: #2E2F42;
-}
-.list-text {
-font-size: 16px;
-font-weight: 400;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #434455;
-}
+  color: #2E2F42;
+  }
+  .list-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  }
+
 /*------------- /COMMON STYLES -----------------*/
 
 /*-------------HEDER STYLES -----------------*/
@@ -364,6 +365,19 @@ color: #8E8F99;
 }
 
 /*========/FORM STYLES========*/
+/*========OUR BENEFITS STYLES========*/
+.benefits-icon-box {
+    display: none;
+}
+.benefits {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+.benefits-list-title {
+    margin-bottom: 8px; 
+}
+
+/*========/OUR BENEFITS STYLES========*/
 
 
 @media screen and (min-width: 480px) {
@@ -557,7 +571,57 @@ color: #8E8F99;
     max-height: 31px;
 }
 /*------------ /  MOBILE FORM STYLES ------------*/
-}   
+/*======== MOBILE OUR BENEFITS STYLES========*/
+.benefits-list-item {
+    max-width: 288px;
+    height: 120px;
+}
+.benefits-list-item:not(:last-child) {
+    margin-bottom: 72px;
+}
+.benefits-list-title {
+    text-align: center;
+
+}
+
+
+/*========/ MOBILE OUR BENEFITS STYLES========*/
+}
+
+/*======== MOBILE AND TABLET STYLES========*/ 
+
+@media screen and (max-width: 1158px) {
+   
+    .benefits-list-title {    
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #2E2F42;
+    }
+    .benefits-list-text {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
+    .benefits-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+    .benefits-list-item {
+        width: 356px;
+        height: 120px;
+    }
+   
+
+}
+/*========/ MOBILE AND TABLET STYLES========*/     
+
 
 
 
@@ -682,6 +746,10 @@ color: #8E8F99;
     padding-left: 38px;
 }
 /*------------ /  TABLET FORM  STYLES ------------*/
+/*======== TABLET OUR BENEFITS STYLES========*/
+
+
+/*========/ TABLET  OUR BENEFITS STYLES========*/
 } 
 
 /*------------- /TABLET STYLES -----------------*/    
@@ -693,6 +761,7 @@ color: #8E8F99;
     .container {
         width: 1158px;
     }
+    
 /*-------------  DESKTOP HEDER STYLES -----------------*/
     .page-header {
         padding-top: 24px;
@@ -724,13 +793,37 @@ color: #8E8F99;
     .order-service-btn {
         margin-bottom: 188px;
     }
-/*------------- /DESKTOP HERO  STYLES -----------------*/ 
+/*------------- /DESKTOP HERO  STYLES --------*/
+
+/*======== DESKTOP OUR BENEFITS STYLES========*/
+.benefits {
+    padding-top: 191px;
+    padding-bottom: 120px; 
+}
+.benefits-list {
+    display: flex;
+    gap: 24px;
+}
+.benefits-list-item{
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    width: 264px;
+    align-items: flex-start;
+}
+.benefits-icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    width: 264px;
+    background-color: #f4f4fd; 
+    border-radius: 4px;
+    border: 1px solid  #8E8F99;
+    margin-bottom: 8px;
+}
+/*========/ DESKTOP OUR BENEFITS STYLES========*/ 
 
 
-/*------------ DESKTOP MODAL WINDOW  STYLES ------------*/
 
-/*------------ / DESKTOP MODAL WINDOW  STYLES ------------*/
-
-/*------------   DESKTOP FORM  STYLES ------------*/
-/*------------ /  DESKTOP FORM  STYLES ------------*/
 }

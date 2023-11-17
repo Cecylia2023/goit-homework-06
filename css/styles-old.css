@@ -228,7 +228,7 @@ margin-right: auto;
 .benefits-list-title {
     margin-bottom: 8px;
 }
-.benefits-list-item{
+.benefits-list-item {
     display: flex;
     gap: 8px;
     flex-direction: column;
