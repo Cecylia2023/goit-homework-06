@@ -72,7 +72,7 @@ color: #434455;
 }
 /*------------- /COMMON STYLES -----------------*/
 
-/*------------- MOBILE STYLES -----------------*/
+/*-------------HEDER STYLES -----------------*/
 .page-header {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -97,7 +97,7 @@ color: #434455;
        align-items: center;
        justify-content: space-between; 
     }
-       /*-------------  MOBILE HERO STYLES -----------------*/
+       /*-------------   HERO STYLES -----------------*/
 .hero {
     background-color: rgba(46, 47, 66, 0.70);
     background-image: linear-gradient( rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office.jpg);
@@ -145,7 +145,8 @@ color: #434455;
     .order-service-btn:focus {
         background-color: #404BBF;    
     }
-/*-------------/  MOBILE HERO STYLES -----------------*/
+/*-------------/ HERO STYLES -----------------*/
+
 /*========BACKDROP STYLES========*/
 .backdrop {
     position: fixed;
@@ -172,11 +173,8 @@ color: #434455;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 288px;
-    min-height: 623px;
     border-radius: 4px;
     background-color: #FCFCFC;
-    padding: 72px 16px 16px 24px; 
     box-shadow:  0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);     
 }
@@ -208,9 +206,7 @@ color: #434455;
 .modal-close-btn:focus .modal-close-btn-icon {
     fill: #FFFFFF;
 }
-.modal-window-text {
-    width: 256px;
-    height: 48px;   
+.modal-window-text {  
     margin-bottom: 16px;
     text-align: center;
     font-size: 16px;
@@ -222,6 +218,7 @@ color: #434455;
 /*========/MODAL WINDOW STYLES========*/
 
 /*========FORM STYLES========*/
+
 .modal-form-wrapper {
     margin-bottom: 8px;
 }
@@ -242,7 +239,6 @@ color: #8E8F99;
     height: 40px;
     border-radius: 4px;
     border: 1px solid #2E2F4266;
-    padding-left: 34px;
     background-color: transparent;
     outline: transparent; 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -313,12 +309,16 @@ color: #8E8F99;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-checkbox-label {
+    display: flex;    
+    align-items: center;
+    gap: 8px;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
     }
+   
     .privacy-policy-link {
         font-size: 12px;
         font-weight: 400;
@@ -330,14 +330,15 @@ color: #8E8F99;
     .modal-form-checkbox-wrapper {
         margin-bottom: 24px;
     }
+   
     .modal-form-checkbox:checked + .modal-form-checkbox-label .custome-checkbox {
-        background-color: #404BBF;
-        fill: #F4F4FD;
+        background-color: #404BBF;    
         border: none;
    }
    .modal-form-checkbox:focus + .modal-form-checkbox-label .custome-checkbox {
        outline: 2px solid #4D5AE5;
    }
+  
    .modal-form-button {
     display: block;
     background-color: #4D5AE5;
@@ -530,6 +531,32 @@ color: #8E8F99;
 
     }
 /*------------ /  MOBILE HERO STYLES -----------------*/
+
+
+
+/*------------ MOBILE MODAL WINDOW  STYLES ------------*/
+.modal {
+    width: 288px;
+    min-height: 623px;
+    padding: 72px 16px 16px 24px; 
+}
+.modal-window-text {
+    width: 256px;
+    height: 48px; 
+}
+
+/*------------ / MOBILE MODAL WINDOW  STYLES ------------*/
+
+/*------------    MOBILE FORM STYLES ------------*/
+.modal-form-input {
+    padding-left: 34px;
+}
+
+.modal-form-checkbox-label-wrapper {
+        
+    max-height: 31px;
+}
+/*------------ /  MOBILE FORM STYLES ------------*/
 }   
 
 
@@ -634,7 +661,27 @@ color: #8E8F99;
             margin-bottom: 112px;
         }
         
-/*------------- / TABLET HERO STYLES-----------------*/        
+/*------------- / TABLET HERO STYLES-----------------*/
+
+
+/*------------ TABLET MODAL WINDOW  STYLES ------------*/
+.modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
+}
+.modal-window-text {
+    width: 360px;
+    height: 24px;   
+}
+
+/*------------ / TABLET MODAL WINDOW  STYLES ------------*/
+
+/*------------   TABLET FORM  STYLES ------------*/
+.modal-form-input {
+    padding-left: 38px;
+}
+/*------------ /  TABLET FORM  STYLES ------------*/
 } 
 
 /*------------- /TABLET STYLES -----------------*/    
@@ -677,5 +724,13 @@ color: #8E8F99;
     .order-service-btn {
         margin-bottom: 188px;
     }
-/*------------- /DESKTOP HERO  STYLES -----------------*/    
+/*------------- /DESKTOP HERO  STYLES -----------------*/ 
+
+
+/*------------ DESKTOP MODAL WINDOW  STYLES ------------*/
+
+/*------------ / DESKTOP MODAL WINDOW  STYLES ------------*/
+
+/*------------   DESKTOP FORM  STYLES ------------*/
+/*------------ /  DESKTOP FORM  STYLES ------------*/
 }
