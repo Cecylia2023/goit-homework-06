@@ -436,6 +436,35 @@ color: #8E8F99;
 
 /*========/OUR TEAM STYLES========*/
 
+/*========PORTFOLIO STYLES========*/
+.portfolio {
+    padding: 96px 0;
+}
+.section-title {
+    margin-bottom: 72px;
+}
+.portfolio-list-item {
+    height: 420px;
+    border: 1px solid #F4F4FD;
+    background: #FFF;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.thumb-portfolio {
+    padding: 32px 16px;
+    border: 1px solid #E7E9FC;
+    border-top: none;    
+}
+.portfolio-list-title  {
+    margin-bottom: 8px;
+}
+.portfolio-list-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*========/ PORTFOLIO STYLES========*/
+
 
 @media screen and (min-width: 480px) {
     .container {
@@ -654,9 +683,19 @@ color: #8E8F99;
     margin-bottom: 72px;
 }
 
-
-
 /*========/ MOBILE OUR TEAM STYLES========*/
+
+/*======== MOBILE PORTFOLIO STYLES========*/
+.portfolio-list-item {
+    width: 288px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.portfolio-overlay {
+    height: 280px;
+}
+
+/*========/ MOBILE PORTFOLIO STYLES========*/
 }
 
 
@@ -698,6 +737,13 @@ color: #8E8F99;
     }
 
 /*========/ MOBILE AND TABLET OUR TEAM STYLES========*/
+
+/*======== MOBILE AND TABLET PORTFOLIO STYLES========*/
+.portfolio-overlay-text {
+    display: none;
+}
+
+/*========/ MOBILE AND TABLET PORTFOLIO STYLES========*/
    
 
 }
@@ -840,8 +886,22 @@ color: #8E8F99;
     width: calc((100%-24px)/2);
 }
 
-
 /*========/ TABLET  OUR TEAM STYLES========*/
+
+/*======== TABLET PORTFOLIO STYLES========*/
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+}
+.portfolio-list-item {
+    width: calc((100% - 24px) / 2);
+}
+.portfolio-overlay {
+    height: 300px;
+}
+/*========/ TABLET PORTFOLIO STYLES========*/
 } 
 
 /*------------- /TABLET STYLES -----------------*/    
@@ -931,6 +991,45 @@ color: #8E8F99;
  } 
 
 /*========/ DESKTOP OUR TEAM STYLES========*/
+
+/*======== DESKTOP PORTFOLIO STYLES========*/
+.portfolio {
+    padding: 120px 0;
+}
+.portfolio-list {
+    row-gap: 48px;
+}
+.portfolio-list-item {
+    width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.portfolio-list-item:hover {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.portfolio-overlay {
+    position: relative; 
+    overflow: hidden; 
+}
+.portfolio-overlay-text {
+    display: block;
+    position: absolute;
+    top: 0;
+    color: #F4F4FD;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    background-color: #4D5AE5;
+    padding: 40px 32px;
+    transform: translateY(100%); 
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    height: 100%;
+}
+.portfolio-list-item:hover .portfolio-overlay-text {
+    transform: translateY(0%);
+}
+
+/*========/ DESKTOP PORTFOLIO STYLES========*/
 
 
 
